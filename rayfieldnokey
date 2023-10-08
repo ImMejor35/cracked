@@ -1,0 +1,4 @@
+local load
+load = hookfunc(loadstring, function(script, ...)
+	return load(script:gsub("if Settings.KeySystem then", "if 1==2 then"), ...)
+end)
